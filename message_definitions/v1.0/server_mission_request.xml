@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<mavlink>
+<dialect>3</dialect>
+<messages>
+    <message id="3333" name="SERVER_MISSION_REQUEST">
+     <description>This message send the server mission request</description>
+	<field type="uint64_t" name ="timestamp">time since system start (microseconds)</field>
+	<field type="uint8_t" name ="mission_type"> Mission type of message</field>
+	<field type="float" name ="lat"> Latitude coordinate</field>
+	<field type="float" name ="lon"> Longitude coordinate</field>
+	<field type="float" name ="alt"> Altitude coordinate</field>
+	<field type="float" name ="yaw"> Yaw angle</field>
+   </message>
+</messages>
+</mavlink>
