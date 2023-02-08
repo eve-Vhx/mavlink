@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <mavlink>
   <include>minimal.xml</include>
+  <include>server_mission_request.xml</include>
   <version>3</version>
   <dialect>0</dialect>
   <enums>
@@ -6781,14 +6782,24 @@
       <field type="uint8_t" name="msg_pack_size">Number of encoded messages in the pack (not the number of bytes). Allowed range is 1 - 10.</field>
       <field type="uint8_t[250]" name="messages">Concatenation of encoded OpenDroneID messages. Shall be filled with nulls in the unused portion of the field.</field>
     </message>  
-    <message id="3333" name="SERVER_MISSION_REQUEST">
-     <description>This message send the server mission request</description>
-	<field type="uint64_t" name ="timestamp">time since system start (microseconds)</field>
-	<field type="uint8_t" name ="mission_type"> Mission type of message</field>
-	<field type="float" name ="lat"> Latitude coordinate</field>
-	<field type="float" name ="lon"> Longitude coordinate</field>
-	<field type="float" name ="alt"> Altitude coordinate</field>
-	<field type="float" name ="yaw"> Yaw angle</field>
-   </message>    
+<!--     <message id="3333" name="SERVER_MISSION_REQUEST">
+     <description>This message sends the server mission request</description>
+  <field type="uint64_t" name ="timestamp">time since system start (microseconds)</field>
+  <field type="uint8_t" name ="mission_type"> Mission type of message</field>
+  <field type="float" name ="lat"> Latitude coordinate</field>
+  <field type="float" name ="lon"> Longitude coordinate</field>
+  <field type="float" name ="alt"> Altitude coordinate</field>
+  <field type="float" name ="yaw"> Yaw angle</field>
+   </message>
+    <message id="3334" name="SERVER_MISSION_STATE">
+     <description>This message sends the server mission state</description>
+  <field type="uint64_t" name ="timestamp">time since system start (microseconds)</field>
+  <field type="uint8_t" name ="mission_type"> Mission type of message</field>
+  <field type="float" name ="lat"> Latitude coordinate</field>
+  <field type="float" name ="lon"> Longitude coordinate</field>
+  <field type="float" name ="alt"> Altitude coordinate</field>
+  <field type="float" name ="yaw"> Yaw angle</field>
+  <field type="uint32_t" name ="state"> State</field>
+   </message> -->
   </messages>
 </mavlink>
