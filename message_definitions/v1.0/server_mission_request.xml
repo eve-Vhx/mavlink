@@ -23,5 +23,14 @@
 	   <field type ="float" name="cruise_alt"> Cruise altitude</field>
 	   <field type ="uint32_t" name="state"> State</field>
 	 </message>
+	 <message id="3335" name="SERVER_MISSION_WAYPOINTS_REQUEST">
+	   <description>This message send the server mission waypoint request</description>
+	   <field type="uint64_t" name="timestamp">time since system start (microseconds)</field>
+	   <field type ="uint8_t" name="mission_type"> Mission type of the message</field>
+	   <field type ="float[32]" name="waypoints"> Mission Waypoints</field>
+	   <field type ="float" name="yaw"> Yaw angle</field>
+	   <field type ="float" name="cruise_alt"> Cruise altitude</field>
+	   <field type ="uint32_t" name="state"> State</field>
+	 </message>
 </messages>
 </mavlink>
