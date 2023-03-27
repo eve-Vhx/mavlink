@@ -27,6 +27,9 @@
 	   <description>This message send the server mission waypoint request</description>
 	   <field type="uint64_t" name="timestamp">time since system start (microseconds)</field>
 	   <field type ="uint8_t" name="mission_type"> Mission type of the message</field>
+	   <field type ="float" name="lat"> Latitude coordinate</field>
+	   <field type ="float" name="lon"> Longitude coordinate</field>
+	   <field type ="float" name="alt"> Altitude coordinate</field>
 	   <field type ="float[138]" name="waypoints"> Mission Waypoints</field>
 	   <field type ="float" name="yaw"> Yaw angle</field>
 	   <field type ="float" name="cruise_alt"> Cruise altitude</field>
