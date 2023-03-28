@@ -30,7 +30,7 @@
 	   <field type ="float" name="lat"> Latitude coordinate</field>
 	   <field type ="float" name="lon"> Longitude coordinate</field>
 	   <field type ="float" name="alt"> Altitude coordinate</field>
-	   <field type ="float[138]" name="waypoints"> Mission Waypoints</field>
+	   <field type ="float[30]" name="waypoints"> Mission Waypoints</field>
 	   <field type ="float" name="yaw"> Yaw angle</field>
 	   <field type ="float" name="cruise_alt"> Cruise altitude</field>
 	   <field type ="uint32_t" name="state"> State</field>
